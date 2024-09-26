@@ -1,0 +1,98 @@
+
+h1{
+    text-align: center;
+}
+.navbar ul{
+    list-style: none;
+    background-color: rgb(160, 22, 22);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    line-height: 0px;
+    
+}
+.navbar a{
+    color: aliceblue;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color: rgb(245, 67, 67);
+}
+.navbar li{
+    float: left;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+footer{
+    background-color: rgb(77, 23, 23);
+    text-decoration: none;
+}
+.footerContiner {
+    width: 100%;
+    padding: 70px 30px 20px;
+    text-decoration: none;
+}
+.Icons{
+    display: flex;
+    justify-content: center;
+}
+.Icons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10;
+    border-radius: 50%;
+}
+.Icons a i{
+    font-size: 2em;
+    color: rgb(189, 44, 44);
+    opacity: 0.9,;
+}
+.Icons a:hover{
+    background-color: rgb(26, 23, 23);
+    transition: 0.10s;
+}
+.Icons a:hover i{
+    color: white;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display:flex;
+    justify-content: center;
+    text-decoration: none;
+}
+.footerNav ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+    text-decoration: none;
+}
+.footerBottom{
+    background-color: rgb(77, 23, 23);
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+}
+img {
+    width: 100%;
+    height: auto;
+};
