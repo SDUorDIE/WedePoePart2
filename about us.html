@@ -3,6 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guardians of Elders is dedicated to protecting senior citizens, ensuring their rights and safety. Join us in our mission to fight elder abuse and neglect.">
+    <meta name="keywords" content="Guardians of Elders, elder care, senior rights, elder abuse prevention, support seniors, respect for seniors">
+    <meta property="og:title" content="Guardians of Elders - Protecting Senior Citizens">
+    <meta property="og:description" content="We are dedicated to safeguarding seniors, preventing elder abuse, and advocating for their rights and well-being.">
+    <meta property="og:image" content="images/Home.png">
+    <meta property="og:url" content="https://www.guardiansofelders.com">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Guardians of Elders">
+
     <link rel="stylesheet" href="stlyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <title>About us</title>
@@ -16,6 +26,45 @@
             font-size: 70px;
         }
     </style>
+
+        <style>
+            .tip-section {
+                background-color: #f9f9f9;
+                padding: 30px;
+                margin-top: 20px;
+                border-radius: 8px;
+            }
+    
+            .tip-section h2 {
+                font-size: 28px;
+                margin-bottom: 20px;
+            }
+    
+            .tip-category {
+                font-size: 20px;
+                background-color: #bd2c2c;
+                color: white;
+                padding: 10px;
+                margin: 10px 0;
+                cursor: pointer;
+                border-radius: 5px;
+                transition: background-color 0.3s ease;
+            }
+    
+            .tip-category:hover {
+                background-color: #0056b3;
+            }
+    
+            .tip-content {
+                margin-top: 10px;
+                font-size: 16px;
+                color: #333;
+                padding-left: 20px;
+                display: none;
+            }
+
+        </style>
+    
 </head>
 <body>
     <p></p>
@@ -27,6 +76,42 @@
         neglect, and exploitation of seniors through advocacy, education, and support services. We strive to create a world where 
         every older adult is treated with respect and dignity, and where their voices are heard and valued. Join us in making a difference
          in the lives of those who have given so much to our communities.</p>
+         
+    <div class="tip-section">
+        <h2>Essential Senior Care Tips</h2>
+
+        <div class="tip-category" onclick="toggleTipContent('health-tips')">
+            Health & Well-being
+        </div>
+        <div class="tip-content" id="health-tips">
+            <p>Ensure seniors have regular check-ups, maintain a balanced diet, and engage in light exercise to improve mobility.</p>
+            <p>Encourage hydration, especially in the elderly, as dehydration can lead to serious health issues.</p>
+        </div>
+
+        <div class="tip-category" onclick="toggleTipContent('safety-tips')">
+            Safety Tips
+        </div>
+        <div class="tip-content" id="safety-tips">
+            <p>Install grab bars and non-slip mats in bathrooms to prevent falls.</p>
+            <p>Ensure that the home is well-lit, especially at night, to avoid tripping hazards.</p>
+        </div>
+
+        <div class="tip-category" onclick="toggleTipContent('mental-health-tips')">
+            Mental Health & Engagement
+        </div>
+        <div class="tip-content" id="mental-health-tips">
+            <p>Encourage social interaction and hobbies to reduce the risk of depression and isolation.</p>
+            <p>Help seniors stay mentally active by encouraging activities such as reading, puzzles, and memory exercises.</p>
+        </div>
+
+        <div class="tip-category" onclick="toggleTipContent('emergency-tips')">
+            Emergency Preparedness
+        </div>
+        <div class="tip-content" id="emergency-tips">
+            <p>Ensure seniors have easy access to emergency contact numbers and medical information.</p>
+            <p>Prepare an emergency kit with essentials like medications, water, and snacks.</p>
+        </div>
+    </div>
          
          <footer>
             <div class="footerContainer">
@@ -51,11 +136,25 @@
                 
                 </div>
             </div>
-            <div class="footerBottom">
-                <p>Copyright &copy;2024</p>
-            </div>
+        </div>
+        <div class="footerBottom">
+            <p>Copyright &copy;2024 Guardians Of Elders</p>
+        </div>
     
         </footer>
+
+        <script>
+
+            function toggleTipContent(tipId) {
+                const content = document.getElementById(tipId);
+                if (content.style.display === 'none' || content.style.display === '') {
+                    content.style.display = 'block';
+                } else {
+                    content.style.display = 'none';
+                }
+            }
+        </script>
+    
         
     </body>
 </html>
